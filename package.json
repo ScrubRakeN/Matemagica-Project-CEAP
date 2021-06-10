@@ -1,0 +1,14 @@
+{
+  "name": "day",
+  "version": "1.0.0",
+  "description": "Thanks for downloading this template!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "(Mife)",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.1"
+  }
+}
