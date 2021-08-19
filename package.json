@@ -13,5 +13,8 @@
     "electron": "^13.1.7",
     "mysql": "^2.18.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "env": "0.0.2"
+  }
 }

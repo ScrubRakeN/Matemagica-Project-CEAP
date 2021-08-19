@@ -43,30 +43,3 @@ buttonTwo.addEventListener('click', () =>{
     submitButton.setAttribute('value', 'Sign Up');
 
 });
-
-submitButton.addEventListener('click', () => {
-
-    const mysql = require('mysql');
-
-    const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: null,
-        database: 'matemagica'
-    });
-
-    connection.connect((error) =>{
-        if(error){
-            
-            return console.log("Connection faild!");
-        }
-
-        console.log('Succesfully connected!');
-
-    });
-
-    connection.end(() =>{
-        console.log('Connection closed!');
-    });
-
-});

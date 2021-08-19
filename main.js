@@ -4,9 +4,16 @@ const url = require('url');
 
 function createWindow(){
 
-    const win = new BrowserWindow({width: 800, height: 600, autoHideMenuBar: true});
+    const win = new BrowserWindow({
+        width: 800, 
+        height: 600, 
+        autoHideMenuBar: true, 
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js')
+    }});
+
     win.loadURL(url.format({
-        pathname: path.join(__dirname, "src/index.html"),
+        pathname: path.join(__dirname, 'src/index.html'),
         protocol: 'file', 
         slashes: true
     }));
